@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Temperature Conversion</title>
+<link rel="stylesheet" href="tConversionStyle.css">
+<script type ="text/javascript" src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<div id="textDiv">Please enter a value in the field below after selecting the conversion needed:</div>
+<div id="radioDiv">
+<input type="radio" id="myRadio1" name="myRadios" value="1" checked> Convert Fahrenheit to Celsius<br>
+<input type="radio" id="myRadio2" name="myRadios" value="2"> Convert Celsius to Fahrenheit<br>
+</div>
+<div id="inputDiv"><input type="text" id="myFahrenheit" autofocus oninput="conversionSwitch()"></div>
+<!-- <div><input type="button" id="myButton" value="Calculate" onclick="fahrenheitToCelsius()"></div> -->
+<label for="myFahrenheit" id="outputLabel"></label>
+<script type="text/javascript" src="scripts/tConversion.js"></script>
+</body>
+</html>
